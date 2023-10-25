@@ -14,7 +14,12 @@
     "skipLibCheck": true,
     "skipDefaultLibCheck": true,
     "baseUrl": ".",
-    "paths": {}
+    "paths": {
+      "@sumitarora/check-number": ["libs/check-number/src/index.ts"],
+      "@sumitarora/is-even": ["libs/is-even/src/index.ts"],
+      "@sumitarora/is-odd": ["libs/is-odd/src/index.ts"],
+      "@sumitarora/models": ["libs/models/src/index.ts"]
+    }
   },
   "exclude": ["node_modules", "tmp"]
 }
