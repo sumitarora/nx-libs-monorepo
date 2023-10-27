@@ -3,7 +3,7 @@ import { isOdd } from '@sumitarora/is-odd';
 import { CheckNumberResponse } from '@sumitarora/models';
 
 export function checkNumber(input: number): CheckNumberResponse {
-  console.log('change');
+  console.log('change - 1');
   const isEvenNumber = isEven(input);
   const isOddNumber = isOdd(input);
   return {
