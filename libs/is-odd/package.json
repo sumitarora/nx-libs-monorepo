@@ -1,6 +1,9 @@
 {
   "name": "@sumitarora/is-odd",
   "version": "0.0.1",
+  "scripts": {
+    "release": "nx release version patch"
+  },
   "dependencies": {
     "tslib": "^2.3.0"
   },
