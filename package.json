@@ -1,12 +1,15 @@
 {
   "name": "@sumitarora/source",
-  "version": "0.0.1",
+  "version": "0.0.4",
   "license": "MIT",
   "scripts": {
     "build": "nx run-many -t build",
     "lint": "nx run-many -t lint",
     "test": "nx run-many -t test",
     "release": "nx affected --base=origin/main~1 --head=origin/main -t release"
+  },
+  "publishConfig": {
+    "registry": "https://registry.npmjs.org"
   },
   "private": true,
   "dependencies": {

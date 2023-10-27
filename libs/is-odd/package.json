@@ -1,8 +1,9 @@
 {
   "name": "@sumitarora/is-odd",
-  "version": "0.0.2",
+  "version": "0.0.5",
   "scripts": {
-    "release": "nx release version patch"
+    "release": "nx release version patch",
+    "publish": "npm publish"
   },
   "dependencies": {
     "tslib": "^2.3.0"

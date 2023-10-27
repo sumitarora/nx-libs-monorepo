@@ -17,6 +17,11 @@ jobs:
       # Give the default GITHUB_TOKEN write permission to commit and push the
       # added or changed files to the repository.
       contents: write
+    env:
+      NPM_AUTH_TOKEN: ${{ secrets.NPM_ACCESS_TOKEN }}
+      NODE_AUTH_TOKEN: ${{ secrets.NPM_ACCESS_TOKEN }}
+      NPM_TOKEN: ${{ secrets.NPM_ACCESS_TOKEN }}
+      GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
     steps:
       - name: checkout code
@@ -41,6 +46,25 @@ jobs:
 
       - name: test application
         run: npm run test
+
+      # - name: Configure npm
+      #   run: |
+      #     echo '//registry.npmjs.org/:_authToken=${NPM_TOKEN}' > .npmrc
+      #     cat .npmrc
+      #   env:
+      #     NPM_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
+
+      # - name: Publish components (Github packages)
+      #   run: |
+      #     for LIBRARY in $(yarn nx affected:libs --base=$last_version --head=$current_version --plain | awk 'NR > 2 && $1 != "Done" { print $1 }')
+      #     do
+      #       cd ./dist/libs/$LIBRARY
+      #       npm publish --registry https://npm.pkg.github.com --no-git-tag-version --no-push --yes
+      #       cd ..
+      #       cd ..
+      #     done
+      #   env:
+      #     GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
       - name: check affected applications
         run: npm run release
