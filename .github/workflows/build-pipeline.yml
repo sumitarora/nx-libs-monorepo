@@ -39,8 +39,4 @@ jobs:
         run: npm run test
 
       - name: check affected applications
-<<<<<<< HEAD
         run: npm nx affected -t release
-=======
-        run: nx affected -t release
->>>>>>> 83f95d1 (feat: adding pr pipeline)
