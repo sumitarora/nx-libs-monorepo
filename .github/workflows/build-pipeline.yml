@@ -39,4 +39,4 @@ jobs:
         run: npm run test
 
       - name: check affected applications
-        run: nx affected -t release
+        run: npm nx affected -t release
