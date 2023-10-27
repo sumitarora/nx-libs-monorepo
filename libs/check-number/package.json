@@ -1,14 +1,14 @@
 {
   "name": "@sumitarora/check-number",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "scripts": {
     "release": "nx release version patch"
   },
   "dependencies": {
     "tslib": "^2.3.0",
-    "@sumitarora/is-even": "*",
-    "@sumitarora/is-odd": "*",
-    "@sumitarora/models": "*"
+    "@sumitarora/is-even": "0.0.2",
+    "@sumitarora/is-odd": "0.0.2",
+    "@sumitarora/models": "0.0.2"
   },
   "type": "commonjs",
   "main": "./src/index.js",
