@@ -6,7 +6,7 @@
     "build": "nx run-many -t build",
     "lint": "nx run-many -t lint",
     "test": "nx run-many -t test",
-    "release": "nx affected -t release"
+    "release": "nx affected --base=origin/main~1 --head=origin/main -t release"
   },
   "private": true,
   "dependencies": {
