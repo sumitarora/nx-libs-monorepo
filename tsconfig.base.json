@@ -18,6 +18,7 @@
       "@sumitarora/check-number": ["libs/check-number/src/index.ts"],
       "@sumitarora/is-even": ["libs/is-even/src/index.ts"],
       "@sumitarora/is-odd": ["libs/is-odd/src/index.ts"],
+      "@sumitarora/logger": ["libs/logger/src/index.ts"],
       "@sumitarora/models": ["libs/models/src/index.ts"]
     }
   },
