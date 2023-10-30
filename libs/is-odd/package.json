@@ -1,5 +1,5 @@
 {
-  "name": "@sumitarora/is-odd",
+  "name": "@er.sumitarora/is-odd",
   "version": "0.0.8",
   "scripts": {
     "release": "nx release version patch -p is-odd",

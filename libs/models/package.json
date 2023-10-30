@@ -1,5 +1,5 @@
 {
-  "name": "@sumitarora/models",
+  "name": "@er.sumitarora/models",
   "version": "0.0.8",
   "scripts": {
     "release": "nx release version patch -p models",

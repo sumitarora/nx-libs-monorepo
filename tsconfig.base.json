@@ -10,17 +10,33 @@
     "importHelpers": true,
     "target": "es2015",
     "module": "esnext",
-    "lib": ["es2020", "dom"],
+    "lib": [
+      "es2020",
+      "dom"
+    ],
     "skipLibCheck": true,
     "skipDefaultLibCheck": true,
     "baseUrl": ".",
     "paths": {
-      "@sumitarora/check-number": ["libs/check-number/src/index.ts"],
-      "@sumitarora/is-even": ["libs/is-even/src/index.ts"],
-      "@sumitarora/is-odd": ["libs/is-odd/src/index.ts"],
-      "@sumitarora/logger": ["libs/logger/src/index.ts"],
-      "@sumitarora/models": ["libs/models/src/index.ts"]
+      "@er.sumitarora/check-number": [
+        "libs/check-number/src/index.ts"
+      ],
+      "@er.sumitarora/is-even": [
+        "libs/is-even/src/index.ts"
+      ],
+      "@er.sumitarora/is-odd": [
+        "libs/is-odd/src/index.ts"
+      ],
+      "@er.sumitarora/logger": [
+        "libs/logger/src/index.ts"
+      ],
+      "@er.sumitarora/models": [
+        "libs/models/src/index.ts"
+      ]
     }
   },
-  "exclude": ["node_modules", "tmp"]
+  "exclude": [
+    "node_modules",
+    "tmp"
+  ]
 }

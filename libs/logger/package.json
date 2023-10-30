@@ -1,5 +1,5 @@
 {
-  "name": "@sumitarora/logger",
+  "name": "@er.sumitarora/logger",
   "version": "0.0.7",
   "scripts": {
     "release": "nx release version patch -p logger && npm run publish-package",
