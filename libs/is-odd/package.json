@@ -2,7 +2,7 @@
   "name": "@sumitarora/is-odd",
   "version": "0.0.6",
   "scripts": {
-    "release": "nx release version patch",
+    "release": "nx release version patch -p is-odd",
     "publish": "npm publish"
   },
   "dependencies": {

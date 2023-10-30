@@ -1,8 +1,8 @@
 {
   "name": "@sumitarora/logger",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "scripts": {
-    "release": "nx release version patch",
+    "release": "nx release version patch -p logger",
     "publish": "npm publish"
   },
   "dependencies": {

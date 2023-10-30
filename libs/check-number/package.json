@@ -2,7 +2,7 @@
   "name": "@sumitarora/check-number",
   "version": "0.0.6",
   "scripts": {
-    "release": "nx release version patch",
+    "release": "nx release version patch -p check-number",
     "publish": "npm publish"
   },
   "dependencies": {
