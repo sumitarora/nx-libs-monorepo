@@ -2,8 +2,8 @@
   "name": "@sumitarora/logger",
   "version": "0.0.7",
   "scripts": {
-    "release": "nx release version patch -p logger",
-    "publish": "npm publish ./dist/libs/logger"
+    "release": "nx release version patch -p logger && npm run publish-package",
+    "publish-package": "npm publish --verbose --access public ../../dist/libs/logger"
   },
   "dependencies": {
     "tslib": "^2.3.0"

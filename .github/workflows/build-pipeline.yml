@@ -17,11 +17,11 @@ jobs:
       # Give the default GITHUB_TOKEN write permission to commit and push the
       # added or changed files to the repository.
       contents: write
-    env:
-      NPM_AUTH_TOKEN: ${{ secrets.NPM_ACCESS_TOKEN }}
-      NODE_AUTH_TOKEN: ${{ secrets.NPM_ACCESS_TOKEN }}
-      NPM_TOKEN: ${{ secrets.NPM_ACCESS_TOKEN }}
-      GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+    # env:
+    #   NPM_AUTH_TOKEN: ${{ secrets.NPM_ACCESS_TOKEN }}
+    #   NODE_AUTH_TOKEN: ${{ secrets.NPM_ACCESS_TOKEN }}
+    #   NPM_TOKEN: ${{ secrets.NPM_ACCESS_TOKEN }}
+    #   GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
     steps:
       - name: checkout code
@@ -68,6 +68,10 @@ jobs:
 
       - name: check affected applications
         run: npm run release
+        env:
+          NODE_AUTH_TOKEN: ${{ secrets.NPM_ACCESS_TOKEN }}
+          NPM_AUTH_TOKEN: ${{ secrets.NPM_ACCESS_TOKEN }}
+          NPM_TOKEN: ${{ secrets.NPM_ACCESS_TOKEN }}
 
       - name: commit after the release
         uses: stefanzweifel/git-auto-commit-action@v5
