@@ -1,6 +1,10 @@
 {
   "name": "@sumitarora/logger",
   "version": "0.0.1",
+  "scripts": {
+    "release": "nx release version patch",
+    "publish": "npm publish"
+  },
   "dependencies": {
     "tslib": "^2.3.0"
   },
