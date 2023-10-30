@@ -3,7 +3,7 @@
   "version": "0.0.6",
   "scripts": {
     "release": "nx release version patch -p logger",
-    "publish": "npm publish"
+    "publish": "npm publish ./dist/libs/logger"
   },
   "dependencies": {
     "tslib": "^2.3.0"
