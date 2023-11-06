@@ -2,8 +2,8 @@
   "name": "@er.sumitarora/is-odd",
   "version": "0.0.8",
   "scripts": {
-    "release": "nx release version patch -p is-odd",
-    "publish": "npm publish"
+    "release": "nx release version patch -p is-odd && nx run is-odd:build && npm run publish-package",
+    "publish-package": "npm publish --verbose --access public ../../dist/libs/is-odd"
   },
   "dependencies": {
     "tslib": "^2.3.0"

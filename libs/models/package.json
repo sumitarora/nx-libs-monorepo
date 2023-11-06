@@ -2,8 +2,8 @@
   "name": "@er.sumitarora/models",
   "version": "0.0.8",
   "scripts": {
-    "release": "nx release version patch -p models",
-    "publish": "npm publish"
+    "release": "nx release version patch -p models && nx run models:build && npm run publish-package",
+    "publish-package": "npm publish --verbose --access public ../../dist/libs/models"
   },
   "dependencies": {
     "tslib": "^2.3.0"
