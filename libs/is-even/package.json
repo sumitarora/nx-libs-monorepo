@@ -1,6 +1,6 @@
 {
   "name": "@er.sumitarora/is-even",
-  "version": "0.0.8",
+  "version": "0.0.9",
   "scripts": {
     "release": "nx release version patch -p is-even && nx run is-even:build && npm run publish-package",
     "publish-package": "npm publish --verbose --access public ../../dist/libs/is-even"
