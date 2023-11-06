@@ -1,4 +1,4 @@
 export function logger(): string {
-  console.log('changes - 6');
+  console.log('changes - 7');
   return 'logger';
 }
