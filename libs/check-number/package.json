@@ -1,6 +1,6 @@
 {
   "name": "@er.sumitarora/check-number",
-  "version": "0.0.10",
+  "version": "0.0.11",
   "scripts": {
     "release": "nx release version patch -p check-number && nx run check-number:build && npm run publish-package",
     "publish-package": "npm publish --verbose --access public ../../dist/libs/check-number"
