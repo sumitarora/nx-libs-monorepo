@@ -1,6 +1,6 @@
 {
   "name": "@er.sumitarora/logger",
-  "version": "0.0.7",
+  "version": "0.0.8",
   "scripts": {
     "release": "nx release version patch -p logger && nx run logger:build && npm run publish-package",
     "publish-package": "npm publish --verbose --access public ../../dist/libs/logger"
